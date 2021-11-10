@@ -1,0 +1,25 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+djangorestframework = "*"
+psycopg2-binary = "*"
+
+[dev-packages]
+pylint = "*"
+yapf = "*"
+
+[requires]
+python_version = "3.8"
+
+[scripts]
+manage = "python manage.py"
+server = "python manage.py runserver"
+mm = "python manage.py makemigrations"
+mg = "python manage.py migrate"
+cs = "python manage.py collectstatic"
+test = "python manage.py test"
+shell = "python manage.py shell"
